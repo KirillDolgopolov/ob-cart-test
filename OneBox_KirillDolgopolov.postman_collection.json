@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "a8f44540-f789-42ea-8889-89ef1aa66b9b",
+		"name": "OneBox_KirillDolgopolov",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29702327"
+	},
+	"item": [
+		{
+			"name": "Test Get from Cart Controller",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8881/api/v1/carts/test",
+					"host": [
+						"localhost"
+					],
+					"port": "8881",
+					"path": [
+						"api",
+						"v1",
+						"carts",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart Get by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8881/api/v1/carts/27f715e6-a6f4-432d-bc01-f81347a90c32",
+					"host": [
+						"localhost"
+					],
+					"port": "8881",
+					"path": [
+						"api",
+						"v1",
+						"carts",
+						"27f715e6-a6f4-432d-bc01-f81347a90c32"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8881/api/v1/carts/",
+					"host": [
+						"localhost"
+					],
+					"port": "8881",
+					"path": [
+						"api",
+						"v1",
+						"carts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart Delete by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8881/api/v1/carts/27f715e6-a6f4-432d-bc01-f81347a90c32",
+					"host": [
+						"localhost"
+					],
+					"port": "8881",
+					"path": [
+						"api",
+						"v1",
+						"carts",
+						"27f715e6-a6f4-432d-bc01-f81347a90c32"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Add to Cart by ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"description\":\"Entrada al partido Barcelona - Real Madrid\",\r\n    \"amount\":\"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8881/api/v1/carts/27f715e6-a6f4-432d-bc01-f81347a90c32/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8881",
+					"path": [
+						"api",
+						"v1",
+						"carts",
+						"27f715e6-a6f4-432d-bc01-f81347a90c32",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
